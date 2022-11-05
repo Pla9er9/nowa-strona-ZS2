@@ -15,7 +15,6 @@
         color: #f6f6f6;
         padding: 0px;
         text-indent: 30px;
-        font-family: 'Titillium Web', sans-serif;
         transition: 0.2s ease;
     }
 
