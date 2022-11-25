@@ -1,5 +1,11 @@
-<script>
-    let navbarText = "Zespół szkół nr 2 im. PPŁK. DR. Stanisława Kulińskiego w"
+<script lang="ts">
+    import { createEventDispatcher } from "svelte";
+
+    const dispatch = createEventDispatcher()
+
+    function changeMenuVisibility() {
+        dispatch('changeMenuVisibility')
+    }
 
 </script>
 
@@ -18,14 +24,14 @@
 
         <img src="images/herb.png" alt="logo zs2" width="50px" id="navBarHerb">
     </div>
-    <button id="menu">
+    <button id="showMenu" on:click={changeMenuVisibility}>
         <img src="images/menu.svg" alt="menu" width="30px">
     </button>
 </div>
 
 <style>
     #navbar{
-        position: fixed;
+        position: absolute;
         right: 0;
         display: flex;
         align-items: center;
@@ -33,6 +39,7 @@
         width: 85vw;
         height: 70px;
         background-color: #f6f6f6;
+        margin-top: -8px;
     }
 
     #navBarLogo {
@@ -93,14 +100,14 @@
         display: inline-flex;
     }
 
-    #menu {
+    #showMenu {
         display: none;
         background-color: #f6f6f6;
         border: none;
         margin-right: 10px;
     }
 
-    @media only screen and (max-width: 1159px) {
+    @media only screen and (max-width: 1199px) {
         #navbar {
             width: 100vw;
         }
@@ -146,7 +153,7 @@
             margin-left: 10px;
         }
 
-        #menu {
+        #showMenu {
             display: block;
         }
     }
