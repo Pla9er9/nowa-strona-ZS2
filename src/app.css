@@ -1,7 +1,30 @@
 :root {
+    overflow-x: hidden;
+}
+
+* {
     font-family: 'Titillium Web', sans-serif;
+}
+
+html,body {
+    background-color: #fff;
 }
 
 a {
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #959694;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7d;
+    border-radius: 10px;
 }
