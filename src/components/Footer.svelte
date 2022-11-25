@@ -1,20 +1,20 @@
-<div id="footer">
-    <p>Copyright © 2022 Zespół Szkół nr 2 w Wągrowcu</p>
-</div>
+<p id="footer">Copyright © 2022 Zespół Szkół nr 2 w Wągrowcu</p>
+
 
 <style>
     #footer {
-        position: fixed;
-        display:flex;
-        align-items:center;
-        left: 0;
+        margin-left: -8px;
+        margin-bottom: -1px;
         bottom: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        align-items:center;
         width: 100%;
         height:40px;
+        text-indent: 30px;
         background-color: #033e8d;
         color: #f6f6f6;
-        padding: 0px;
-        text-indent: 30px;
         transition: 0.2s ease;
     }
 
@@ -22,13 +22,12 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         height: 45px;
-        background: linear-gradient(to right, #033e8d,#057bfa);
     }
 
     @media only screen and (max-width: 390px) {
     #footer {
         text-align: center;
-        font-size: 14px;
+        font-size: 10px;
   }
 }
 
