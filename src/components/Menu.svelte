@@ -1,6 +1,6 @@
 <div id="menu">
     <div id="forStudent">
-        <a href="/">
+        <a href="/?p=aktualnosci">
             <div class="menuHrefs">
                 <img src="/icons/notifications.svg" alt="aktualności">
                 <p>Aktualności</p>
