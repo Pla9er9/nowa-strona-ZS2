@@ -13,6 +13,7 @@
   import Projects from './pages/Projects.svelte'
   import Rodo from './pages/Rodo.svelte'
   import School from './pages/School.svelte'
+  import Start from './pages/Start.svelte'
 
   $: MenuVisibility = false
 
@@ -21,7 +22,7 @@
     console.log("Menu visibility: " + MenuVisibility)
   }
   
-  var pages: string[] = ["dokumenty", "biblioteka","matura","projekty","kontakt","rodo","monitoring"]
+  var pages: string[] = ["dokumenty", "biblioteka","matura","projekty","kontakt","rodo","monitoring","aktualnosci"]
 
   var pageTitle: string
 
@@ -35,8 +36,10 @@
     pageTitle = "Szkoła"
   else if (p === "eszkola")
     pageTitle = "e-Szkoła"
-  else
+  else if (p === "aktualnosci")
     pageTitle = "Aktualności"
+  else 
+    pageTitle = ""
 
 </script>
 
@@ -73,8 +76,10 @@
       {:else if p === "rodo"}
         <Rodo></Rodo>
 
-      {:else}
+      {:else if p === "aktualnosci"}
         <News></News>
+      {:else}
+        <Start></Start>
       {/if}
     </div>
   </div>
