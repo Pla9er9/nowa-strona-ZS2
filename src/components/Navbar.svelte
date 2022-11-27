@@ -11,7 +11,9 @@
 
 <div id="navbar">
     <div id="leftSide">
-        <img src="images/zs2logo.png" alt="logo zs2" id="navBarLogo">
+        <a href="/">
+            <img src="images/zs2logo.png" alt="logo zs2" id="navBarLogo">
+        </a>
         <h2 id="navbarText">Zespół szkół nr 2 im. PPŁK. DR. Stanisława Kulińskiego w <yellow> Wągrowcu<yellow></h2>
     </div>
 
