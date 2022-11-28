@@ -109,7 +109,7 @@
         margin-right: 10px;
     }
 
-    @media only screen and (max-width: 1199px) {
+    @media only screen and (max-width: 1266px) {
         #navbar {
             width: 100vw;
         }
