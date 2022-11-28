@@ -23,7 +23,7 @@
         padding-bottom: 40px;
     }
 
-    @media only screen and (max-width: 1199px) {
+    @media only screen and (max-width: 1266px) {
         #leftBox {
             margin-top: 80px;
         }
