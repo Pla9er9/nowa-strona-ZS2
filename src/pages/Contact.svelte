@@ -43,7 +43,7 @@ Dla Interesantów czynny: <br>
 <ShowTextBtn title="Pedagog" description="
 DYŻURY PSYCHOLOGA I PEDAGOGA SZKOLNEGO <br>
 PSYCHOLOG SZKOLNY mgr Urszula Francuziak (sala 105) <br>
-<img src='https://zsp2wagrowiec.pl/cms/wp-content/uploads/2022/10/x2022-10-05_17h14_20-1024x487.png.pagespeed.ic.bLLzh0RO1O.webp' style='width:80%;min-with:150px'>
+<img src='images/pedagog.webp' style='width:80%;min-with:150px'>
 "></ShowTextBtn>
 
 <ShowTextBtn title="Koordynator Do Spraw Dostępu" description="
