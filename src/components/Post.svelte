@@ -40,7 +40,6 @@
         align-items: center;
         background-color: #7b00ff;
         border-radius: 15px;
-        transition: 1s ease-in!important;
     }
 
     .post p {
@@ -55,7 +54,7 @@
 
     #new h1 {
         font-size: 20px;
-        color: #646363;
+        color: #414141;
         text-align: center;
     }
 
