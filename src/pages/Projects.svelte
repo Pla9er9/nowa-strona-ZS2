@@ -75,4 +75,23 @@
         color: #4a55ff;
     }
 
+    @media only screen and (max-width: 1550px) {
+        img {
+            width: 600px;
+        }
+    }
+
+    @media only screen and (max-width: 680px) {
+        img {
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 520px) {
+        a {
+            font-size: 1em;
+            padding: 8px;
+        }
+    }
+
 </style>
