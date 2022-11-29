@@ -15,11 +15,10 @@
   import School from './pages/School.svelte'
   import Start from './pages/Start.svelte'
 
-  $: MenuVisibility = false
+  let MenuVisibility = true
 
   function cmv() {
     MenuVisibility = !(MenuVisibility)
-    console.log("Menu visibility: " + MenuVisibility)
   }
   
   var pages: string[] = ["dokumenty", "biblioteka","matura","projekty","kontakt","rodo","monitoring","aktualnosci"]
@@ -49,6 +48,7 @@
     <LeftBox visibility={MenuVisibility}>
       <Menu />
     </LeftBox>
+
     <div id="container">
       <h2>{pageTitle}</h2>
 
@@ -82,14 +82,13 @@
         <Start></Start>
       {/if}
     </div>
-    <Footer></Footer>
   </div>
 </main>
 <style>
   #app0 {
     display: flex;
     position: relative;
-    min-height: 100%;
+    height: 100%;
   }
 
   #container{
