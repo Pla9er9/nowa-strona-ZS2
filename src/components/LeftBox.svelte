@@ -1,12 +1,25 @@
 <script lang="ts">
-    export var visibility: boolean = false;
-    let display: string = "block"
-    display = (visibility ? "block" : "none")
+    export let visibility: boolean = true;
+    $: window.screen.width, () => 
+    {    
+        if (window.screen.width <= 680)
+        {
+            visibility = false
+            display = "none"
+        }
+        else 
+            visibility = true
+    }
+
+    var display: string = "none"
+
+    $: visibility, display = (visibility ? "block" : "none")
 </script>
 
 
-<div id="leftBox">
+<div id="leftBox" style="--display: {display};">
     <slot></slot>
+    <p>{visibility}</p>
 </div>
 
 
@@ -38,9 +51,16 @@
     @media only screen and (max-width: 680px){
         #leftBox{
             right: 0;
-            display: none;
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
+            display: var(--display);
+            border-radius: 0px;
+            border-top-left-radius: 15px;
+            border: solid 3px rgb(132, 0, 255);
+            padding-bottom: 60px;
+            border-right: none;
+            width: 200px;
+            position: absolute;
+            margin-top: 60px;
+            justify-self: flex-end;
         }
     }
 
