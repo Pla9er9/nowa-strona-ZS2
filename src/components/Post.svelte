@@ -3,44 +3,55 @@
     export let image: string;
     export let description: string;
 
+    var visibility:boolean = false;
+
+    function changeVisibility(){
+        visibility = !(visibility)
+    }
+
 </script>
 
 <div id="new">
     <h1>{title}</h1>
-    <div class="post">
-        <div style="display: flex;        justify-content: center;">
-            <img src="news/{image}" alt="{title}">
-            <p>{description}</p>
+    <button on:click={() => changeVisibility()}>
+        <div class="post">
+            <img src="{image}" alt="{title}">
+            {#if visibility}
+                <p>{description}</p>
+            {/if}
         </div>
-    </div>
+    </button>
 </div>
 
 
 <style>
+    button {
+        width: max-content;
+        height: max-content;
+        background-color: #fff;
+        border: none;
+    }
     .post {
         width: 500px;
         height: max-content;
         margin-bottom: 100px;
-        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1e00ffa0;
         border-radius: 15px;
-        transition: 1s !important;
+        transition: 1s ease-in!important;
     }
 
-    .post:hover p {
-        display: block;
-        margin-right: 50px;
+    .post p {
+        height: 100%;
+        width: 340px;
+        font-weight: 400;
+        color: #fff;
+        word-wrap: normal;
+        text-align: center;
+        padding: 8px    ;
     }
-
-    .post:hover img {
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-
-    .post:hover {
-        width: max-content;
-        background-color: #ecddc6;
-    }
-
 
     #new h1 {
         font-size: 20px;
@@ -51,16 +62,6 @@
     .post img {
         max-width: 450px;
         padding: 20px;
-    }
-
-    .post p {
-        align-self: flex-center;
-        height: 100%;
-        width: 340px;
-        font-weight: 400;
-        display: none;
-        word-wrap: normal;
-        color: rgb(22, 21, 21);
     }
 
 </style>
