@@ -28,7 +28,7 @@
     button {
         width: max-content;
         height: max-content;
-        background-color: #fff;
+        background-color: transparent;
         border: none;
     }
     .post {
@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #1e00ffa0;
+        background-color: #7b00ff;
         border-radius: 15px;
         transition: 1s ease-in!important;
     }
@@ -50,7 +50,7 @@
         color: #fff;
         word-wrap: normal;
         text-align: center;
-        padding: 8px    ;
+        padding: 8px;
     }
 
     #new h1 {
@@ -62,6 +62,22 @@
     .post img {
         max-width: 450px;
         padding: 20px;
+        border: solid none;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 850px){
+        .post {
+            width: 300px;
+        }
+        
+        .post img {
+            max-width: 270px;
+        }
+        .post p {
+            font-size: 10px;
+            width: 200px;
+        }
     }
 
 </style>
