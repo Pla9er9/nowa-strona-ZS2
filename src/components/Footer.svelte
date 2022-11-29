@@ -16,6 +16,7 @@
         background-color: #033e8d;
         color: #f6f6f6;
         transition: 0.2s ease;
+        border-top-right-radius: 15px;
     }
 
     #footer:hover {
