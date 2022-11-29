@@ -82,6 +82,7 @@
         <Start></Start>
       {/if}
     </div>
+    <Footer></Footer>
   </div>
 </main>
 <style>
