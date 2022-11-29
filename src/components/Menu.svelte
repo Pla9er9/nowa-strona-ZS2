@@ -37,7 +37,7 @@
             </div>
         </a>
         
-        <a href="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2018/06/REGULAMIN-BOISKA-WIELOFUNKCYJNEGO.pdf">
+        <a href="docs/REGULAMIN-BOISKA.pdf">
             <div class="menuHrefs">
                 <img src="/icons/football.svg" alt="Boisko">
                 <p>Boisko</p>
@@ -76,14 +76,14 @@
             </div>
         </a>
         
-        <a href="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2022/02/regulamin_monitoringu_ZS2_2022.pdf" target="_blank" rel="noreferrer">
+        <a href="docs/regulamin_monitoringu.pdf" target="_blank" rel="noreferrer">
             <div class="menuHrefs">
                 <img src="/icons/cam.svg" alt="Monitoring">
                 <p>Monitoring</p>
             </div>
         </a>
         
-        <a href="/Bip.docs" target="_blank" rel="noreferrer">
+        <a href="docs/Bip.pdf" target="_blank" rel="noreferrer">
             <div class="menuHrefs">
                 <img src="/icons/bip.svg" alt="Bip">
                 <p>Bip</p>
