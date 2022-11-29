@@ -28,17 +28,17 @@
 </div>
 
 <div id="icons">
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2022/03/pp-logo.png" alt="politechnika poznańska">
+    <img src="images/pp.png" alt="politechnika poznańska">
 
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2022/03/Wyzsza-Szkola-Bezpieczenstwa-logo-1024x1024.png" alt="wyższ szkoła bezpieczeństwa">
+    <img src="images/wsb.png" alt="wyższa szkoła bezpieczeństwa">
 
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2022/04/xsos-dtz-page-768x567.jpg.pagespeed.ic.FLpzX4ilsK.webp" alt="sos">
+    <img src="images/sos.webp" alt="sos">
 
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2021/11/skrzynka.png" alt="anonimowa skrzynka alarmowa">
+    <img src="images/skrzynka.png" alt="anonimowa skrzynka alarmowa">
 
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2021/08/x2021-08-25_17h13_34-768x280.png.pagespeed.ic.DFe4Qp-u3P.webp" alt="kalendarz">
+    <img src="images/kalendarz.png" alt="kalendarz">
 
-    <img src="https://zsp2wagrowiec.pl/cms/wp-content/uploads/2017/12/xskrzynka.png.pagespeed.ic.AXMAbKhbQ8.webp" alt="elektroniczna skrzynka podawcza ePUAP">
+    <img src="images/esp.png" alt="elektroniczna skrzynka podawcza ePUAP">
 </div>
 
 <style>
@@ -62,16 +62,23 @@
     }
 
     .stat {
+        margin-top: 0px;
         margin-bottom: 25px;
         background-color: #7ae83f;
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 120px;
-        font-size: 20px;
+        font-size: 18px;
+        padding: 5px;
         font-weight: 900;
         border-radius: 15px;
-        box-shadow: 0px 5px 5px rgb(120, 120, 120);
+        box-shadow: 0px 5px 15px rgb(120, 120, 120);
+        transition:200ms;
+    }
+
+    .stat:hover {
+        margin-top: -10px;
     }
 
     #icons {
@@ -110,7 +117,7 @@
 
 @media only screen and (max-width: 599px) {
     #centerImage {
-        width: 90%;
+        width: 95%;
     }
     .stat {
         margin-right: 15px;
