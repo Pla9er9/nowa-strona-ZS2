@@ -8,6 +8,8 @@
 
 html,body {
     background-color: #fff;
+    background-image: url("public/images/background.png");
+    background-repeat: repeat-y;
 }
 
 a {
