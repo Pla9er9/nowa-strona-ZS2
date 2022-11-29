@@ -13,4 +13,10 @@
         border-radius: 15px;
     }
 
+    @media only screen and (max-width: 520px) {
+        .projectLink {
+            width: 250px;
+        }
+    }
+
 </style>
