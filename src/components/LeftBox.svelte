@@ -19,7 +19,6 @@
 
 <div id="leftBox" style="--display: {display};">
     <slot></slot>
-    <p>{visibility}</p>
 </div>
 
 
@@ -54,7 +53,7 @@
             display: var(--display);
             border-radius: 0px;
             border-top-left-radius: 15px;
-            border: solid 3px rgb(132, 0, 255);
+            border: solid 3px rgb(0, 34, 255);
             padding-bottom: 60px;
             border-right: none;
             width: 200px;
