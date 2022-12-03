@@ -42,9 +42,6 @@
 </div>
 
 <style>
-    * {
-        animation: changeVisibility 1s;
-    }
 
     #centerImage {
         width: 70%;
@@ -97,16 +94,6 @@
         width: 100px;
         margin: 50px;
     }
-
-    @keyframes changeVisibility {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 @media only screen and (max-width: 900px) {
     .stat {
