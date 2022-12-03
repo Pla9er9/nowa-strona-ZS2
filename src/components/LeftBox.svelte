@@ -18,6 +18,11 @@
 
 
 <div id="leftBox" style="--display: {display};">
+    <center>
+        <a href="https://uonetplus.vulcan.net.pl/powiatwagrowiecki/"><p id="dz">Dziennik</p></a>
+        <a href="https://www.facebook.com/profile.php?id=100063451487568"><p id="fb">Facebook</p></a>
+    </center>
+
     <slot></slot>
 </div>
 
@@ -29,10 +34,24 @@
         margin-left: -8px;
         margin-bottom: 100px;
         width: 220px;
-        height: 1000px;
+        height: max-content;
         border-top-right-radius:30px;
         border-bottom-right-radius: 30px;
         padding-bottom: 40px;
+    }
+
+    #fb {
+        display: none;
+        background-color: #033e8d;
+        color: #fff;
+        width: 70%;
+    }
+    
+    #dz {
+        display: none;
+        background-color: #ff5757;
+        color: #fff;
+        width: 70%;
     }
 
     @media only screen and (max-width: 1266px) {
@@ -54,12 +73,19 @@
             border-radius: 0px;
             border-top-left-radius: 15px;
             border: solid 3px rgb(0, 34, 255);
-            padding-bottom: 60px;
+            padding-bottom: 20px;
             border-right: none;
             width: 200px;
             position: absolute;
             margin-top: 60px;
+            height: max-content;
             justify-self: flex-end;
+        }
+        #fb {
+            display: block;
+        }
+        #dz {
+            display: block;
         }
     }
 
